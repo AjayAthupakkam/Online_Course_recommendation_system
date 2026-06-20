@@ -1,0 +1,6 @@
+[client]
+showSidebarNavigation = true
+
+[development]
+# This hides the "View source" option in the top-right menu
+watchSourceFiles = false
