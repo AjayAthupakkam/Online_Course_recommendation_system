@@ -4,6 +4,27 @@ import numpy as np
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 
+
+
+# Hide the GitHub icon, the main menu, and the header toolbar entirely
+hide_github_and_menu = """
+    <style>
+    /* Hides the GitHub icon and the edit/star buttons */
+    [data-testid="stHeader"] {{
+        visibility: hidden;
+        height: 0rem;
+    }}
+    /* Alternatively, to specifically target just the GitHub icon if it remains */
+    button[title="View code on GitHub"] {
+        display: none !important;
+    }
+    </style>
+"""
+st.markdown(hide_github_and_menu, unsafe_allow_html=True)
+
+
+
+
 # ── PAGE CONFIG ───────────────────────────────────────────────────────────
 st.set_page_config(
     page_title = "Course Recommender",
