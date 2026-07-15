@@ -3,4 +3,7 @@ pandas
 numpy
 scikit-learn
 openpyxl
+pickle
+seaborn
+suprise
  
